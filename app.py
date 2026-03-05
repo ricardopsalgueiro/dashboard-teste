@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide" # A opção "centered" coloca a página numa coluna central
 )
 
-st.title("📊 Superstore Dashboard")
+st.title("📊 Superstore Dashboard - teste")
 st.markdown("Dashboard de vendas")
 
 # --------------------------------------------------
@@ -74,7 +74,7 @@ num_orders = filtered_df["Order ID"].nunique()
 col1, col2, col3 = st.columns(3)
 col1.metric("💰 Vendas Totais", f"${total_sales:,.0f}")
 col2.metric("📈 Lucro Total", f"${total_profit:,.0f}")
-col3.metric("🧾 Nº de Encomendas", num_orders)
+col3.metric("🧾 Nº de Encomendas totais", num_orders)
 
 st.divider()
 
